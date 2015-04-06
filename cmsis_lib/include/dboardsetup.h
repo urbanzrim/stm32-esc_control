@@ -1,3 +1,9 @@
+/*
+ * dboardsetup.h
+ *
+ *  Created on: 5. apr. 2015
+ *      Author: Urban Zrim
+ */
 
 #include "stm32f30x.h"
 #include "stm32f30x_usart.h"
@@ -43,7 +49,7 @@ void gpio_init(){
 	GPIO_PinAFConfig(GPIOC, GPIO_PinSource4, GPIO_AF_7);
 
 	/* Set up Alternate functions for TIM pins */
-	GPIO_PinAFConfig(GPIOC, GPIO_PinSource6, GPIO_AF_2);
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource13, GPIO_AF_2);
 	/*GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_2);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_2);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource4, GPIO_AF_2);*/
@@ -57,12 +63,12 @@ void gpio_init(){
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 	/* Configuration of pin 9 and 10 */
-	GPIO_InitStructure.GPIO_Pin = TIM3_CH1_PIN;
+	GPIO_InitStructure.GPIO_Pin = TIM4_CH2_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
-	GPIO_Init(GPIOC, &GPIO_InitStructure);
+	GPIO_Init(GPIOD, &GPIO_InitStructure);
 
 }
 
@@ -93,14 +99,14 @@ void tim_init(){
 	TIM_TimeBaseInitTypeDef TimerInitStructure;
     TIM_OCInitTypeDef OutputChannelInit;
 
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 
-    TimerInitStructure.TIM_Prescaler = ((SystemCoreClock / 1000000)) - 1;
+    TimerInitStructure.TIM_Prescaler = 71;
     TimerInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
     TimerInitStructure.TIM_Period = 20000-1;
     TimerInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TimerInitStructure.TIM_RepetitionCounter = 0;
-    TIM_TimeBaseInit(TIM3, &TimerInitStructure);
+    TIM_TimeBaseInit(TIM4, &TimerInitStructure);
 
 
     OutputChannelInit.TIM_OCMode = TIM_OCMode_PWM1;
@@ -108,10 +114,10 @@ void tim_init(){
     OutputChannelInit.TIM_OutputState = TIM_OutputState_Enable;
     OutputChannelInit.TIM_OCPolarity = TIM_OCPolarity_High;
 
-    TIM_OC1Init(TIM3, &OutputChannelInit);
-    TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Enable);
+    TIM_OC2Init(TIM4, &OutputChannelInit);
+    TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Disable);
 
    // TIM_ARRPreloadConfig(TIM4, ENABLE);
-    TIM_Cmd(TIM3, ENABLE);
+    TIM_Cmd(TIM4, ENABLE);
 }
 

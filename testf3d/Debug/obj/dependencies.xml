@@ -29,6 +29,16 @@
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f30x.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\include\dboardsetup.h" lastModified="14c8f7ede9a">
+         <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h" lastModified="14c7613db34">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
@@ -51,6 +61,9 @@
       <source file="..\..\..\cmsis_lib\source\stm32f30x_spi.c" lastModified="14c761417ab">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="14c8f7ec00e">
+         <include file="..\..\..\cmsis_lib\include\dboardsetup.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="14c76139ee2">
       </source>
