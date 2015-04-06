@@ -23,7 +23,7 @@
 #define TIM2_CH3_PIN	GPIO_Pin_2	// PORTA
 #define TIM3_CH2_PIN	GPIO_Pin_4	// PORTA
 #define TIM3_CH1_PIN	GPIO_Pin_6	// PORTC
-
+#define TIM4_CH3_PIN	GPIO_Pin_14	// PORTD
 #define TIM4_CH2_PIN	GPIO_Pin_13	// PORTD
 #define TIM4_CH4_PIN	GPIO_Pin_15	// PORTD
 
@@ -50,9 +50,9 @@ void gpio_init(){
 
 	/* Set up Alternate functions for TIM pins */
 	GPIO_PinAFConfig(GPIOD, GPIO_PinSource13, GPIO_AF_2);
-	/*GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_2);
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_2);
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource4, GPIO_AF_2);*/
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource15, GPIO_AF_2);
+	GPIO_PinAFConfig(GPIOC, GPIO_PinSource6, GPIO_AF_2);
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource14, GPIO_AF_2);
 
 	/* Configuration of pin 9 and 10 */
 	GPIO_InitStructure.GPIO_Pin = USART_RX_PIN | USART_TX_PIN;
@@ -63,12 +63,20 @@ void gpio_init(){
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 	/* Configuration of pin 9 and 10 */
-	GPIO_InitStructure.GPIO_Pin = TIM4_CH2_PIN;
+	GPIO_InitStructure.GPIO_Pin = TIM4_CH2_PIN | TIM4_CH4_PIN | TIM4_CH3_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
 	GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+	/* Configuration of pin 9 and 10 */
+	GPIO_InitStructure.GPIO_Pin = TIM3_CH1_PIN;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 }
 
@@ -99,6 +107,7 @@ void tim_init(){
 	TIM_TimeBaseInitTypeDef TimerInitStructure;
     TIM_OCInitTypeDef OutputChannelInit;
 
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 
     TimerInitStructure.TIM_Prescaler = 71;
@@ -107,7 +116,7 @@ void tim_init(){
     TimerInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TimerInitStructure.TIM_RepetitionCounter = 0;
     TIM_TimeBaseInit(TIM4, &TimerInitStructure);
-
+    TIM_TimeBaseInit(TIM3, &TimerInitStructure);
 
     OutputChannelInit.TIM_OCMode = TIM_OCMode_PWM1;
     OutputChannelInit.TIM_Pulse = 1000;
@@ -117,7 +126,16 @@ void tim_init(){
     TIM_OC2Init(TIM4, &OutputChannelInit);
     TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Disable);
 
-   // TIM_ARRPreloadConfig(TIM4, ENABLE);
+    TIM_OC4Init(TIM4, &OutputChannelInit);
+    TIM_OC4PreloadConfig(TIM4, TIM_OCPreload_Disable);
+
+    TIM_OC3Init(TIM4, &OutputChannelInit);
+    TIM_OC3PreloadConfig(TIM4, TIM_OCPreload_Disable);
+
+    TIM_OC1Init(TIM3, &OutputChannelInit);
+    TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Disable);
+
+   /* Enable timers */
+    TIM_Cmd(TIM3, ENABLE);
     TIM_Cmd(TIM4, ENABLE);
 }
-
