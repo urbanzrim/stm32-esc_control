@@ -6,8 +6,5 @@ Using STM32f3 discovery board
 Timer 3 and 4
 
 ##GPIOs:
-Pin 6, Port C
-Pin 14, Port D
-Pin 13, Port D
-Pin 15, Port D
+PC6, PD14, PD13, PD15
 
