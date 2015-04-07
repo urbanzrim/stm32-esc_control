@@ -11,50 +11,23 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/f3pwm/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3074" selectionTopPixel="1262"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="dboardsetup.h" partName="dboardsetup.h" path="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/dboardsetup.h" title="dboardsetup.h" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/dboardsetup.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/cmsis_lib/include/dboardsetup.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3078" selectionTopPixel="1466"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_gpio.h" partName="stm32f30x_gpio.h" path="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/stm32f30x_gpio.h" title="stm32f30x_gpio.h" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/stm32f30x_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/cmsis_lib/include/stm32f30x_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="10422" selectionTopPixel="4369"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_tim.c" partName="stm32f30x_tim.c" path="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/source/stm32f30x_tim.c" title="stm32f30x_tim.c" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/source/stm32f30x_tim.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/cmsis_lib/source/stm32f30x_tim.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="56760" selectionTopPixel="26383"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_tim.h" partName="stm32f30x_tim.h" path="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/stm32f30x_tim.h" title="stm32f30x_tim.h" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_lib/include/stm32f30x_tim.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/cmsis_lib/include/stm32f30x_tim.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="18299" selectionTopPixel="6409"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f30x_temp.c" partName="system_stm32f30x_temp.c" path="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_boot/system_stm32f30x_temp.c" title="system_stm32f30x_temp.c" tooltip="C:/CooCox/CoIDE/workspace/f3pwm/cmsis_boot/system_stm32f30x_temp.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/f3pwm/cmsis_boot/system_stm32f30x_temp.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="6360" selectionTopPixel="2278"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Urban Zrim/Documents/GitHub/stm32-esc_control/main.c" title="main.c" tooltip="C:/Users/Urban Zrim/Documents/GitHub/stm32-esc_control/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/esc_control/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
-<element path="/f3pwm"/>
-<element path="/f3pwm/cmsis_lib"/>
-<element path="/f3pwm/cmsis_lib/include"/>
+<element path="/esc_control"/>
 </expanded>
 <selection>
-<element path="/f3pwm/cmsis_lib/include/dboardsetup.h"/>
+<element path="/esc_control/main.c"/>
 </selection>
 </viewState>
 </view>
@@ -257,168 +230,10 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/include/dboardsetup.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/source/stm32f30x_tim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/include/stm32f30x_gpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/source/stm32f30x_rcc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/include/stm32f30x_rcc.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/source/stm32f30x_rcc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/include/stm32f30x_rcc.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/include/stm32f30x_tim.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_lib/source/stm32f30x_tim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/f3pwm/cmsis_boot/system_stm32f30x_temp.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/esc_control/main.c"/>
 </editors>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position/>
-</item>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position/>
-</item>
-<item historyLabel="stm32f30x_gpio.h" index="3">
-<position info="not_deleted" x="11249" y="3"/>
-</item>
-<item historyLabel="stm32f30x_gpio.h" index="3">
-<position info="not_deleted" x="10422" y="9"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3739" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="2988" y="0"/>
-</item>
-<item historyLabel="stm32f30x_rcc.c" index="4">
-<position info="not_deleted" x="56276" y="65"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3006" y="0"/>
-</item>
-<item historyLabel="stm32f30x_rcc.h" index="5">
-<position info="not_deleted" x="20558" y="19"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="1339" y="0"/>
-</item>
-<item historyLabel="stm32f30x_gpio.h" index="3">
-<position info="not_deleted" x="10422" y="9"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="1023" y="0"/>
-</item>
-<item historyLabel="stm32f30x_rcc.c" index="6">
-<position info="not_deleted" x="54262" y="21"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="982" y="0"/>
-</item>
-<item historyLabel="stm32f30x_rcc.h" index="7">
-<position info="not_deleted" x="18857" y="19"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3621" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.c" index="1">
-<position info="not_deleted" x="56760" y="20"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3621" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="2" y="242"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="248" y="279"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="748" y="1428"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="3440" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="2230" y="596"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="3440" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="2881" y="868"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="3440" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.h" index="9">
-<position info="not_deleted" x="26867" y="10"/>
-</item>
-<item historyLabel="stm32f30x_tim.h" index="9">
-<position info="not_deleted" x="12073" y="32"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3387" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.h" index="9">
-<position info="not_deleted" x="3549" y="10"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3385" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.h" index="9">
-<position info="not_deleted" x="12073" y="32"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3492" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.h" index="9">
-<position info="not_deleted" x="18299" y="22"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3492" y="0"/>
-</item>
-<item historyLabel="stm32f30x_tim.c" index="10">
-<position info="not_deleted" x="56760" y="20"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position/>
-</item>
-<item historyLabel="system_stm32f30x_temp.c" index="11">
-<position info="not_deleted" x="6366" y="0"/>
-</item>
-<item historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3078" y="0"/>
-</item>
-<item historyLabel="system_stm32f30x_temp.c" index="11">
-<position info="not_deleted" x="6360" y="6"/>
-</item>
-<item active="true" historyLabel="dboardsetup.h" index="0">
-<position info="not_deleted" x="3078" y="0"/>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -427,21 +242,33 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f30x_temp.c" tooltip="f3pwm/cmsis_boot/system_stm32f30x_temp.c">
-<persistable path="/f3pwm/cmsis_boot/system_stm32f30x_temp.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_rcc.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_rcc.h">
-<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_rcc.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="esc_control/main.c">
+<persistable path="/esc_control/main.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_rcc.c" tooltip="f3pwm/cmsis_lib/source/stm32f30x_rcc.c">
 <persistable path="/f3pwm/cmsis_lib/source/stm32f30x_rcc.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_tim.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_tim.h">
-<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_tim.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_gpio.c" tooltip="f3pwm/cmsis_lib/source/stm32f30x_gpio.c">
+<persistable path="/f3pwm/cmsis_lib/source/stm32f30x_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="sss/main.c">
+<persistable path="/sss/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="sss/cmsis_boot/system_stm32f4xx.c">
+<persistable path="/sss/cmsis_boot/system_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="sss/cmsis_boot/startup/startup_stm32f4xx.c">
+<persistable path="/sss/cmsis_boot/startup/startup_stm32f4xx.c"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
 <persistable>&#x0A;<subPage/>
 </persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_rcc.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_rcc.h">
+<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_rcc.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_tim.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_tim.h">
+<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_tim.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_tim.c" tooltip="f3pwm/cmsis_lib/source/stm32f30x_tim.c">
 <persistable path="/f3pwm/cmsis_lib/source/stm32f30x_tim.c"/>
@@ -452,26 +279,14 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="testf3d/main.c">
 <persistable path="/testf3d/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_gpio.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_gpio.h">
-<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dboardsetup.h" tooltip="f3pwm/cmsis_lib/include/dboardsetup.h">
-<persistable path="/f3pwm/cmsis_lib/include/dboardsetup.h"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="f3pwm/main.c">
 <persistable path="/f3pwm/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_spi.h" tooltip="testf3d/cmsis_lib/include/stm32f30x_spi.h">
-<persistable path="/testf3d/cmsis_lib/include/stm32f30x_spi.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f30x_temp.c" tooltip="f3pwm/cmsis_boot/system_stm32f30x_temp.c">
+<persistable path="/f3pwm/cmsis_boot/system_stm32f30x_temp.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_gpio.c" tooltip="testf3d/cmsis_lib/source/stm32f30x_gpio.c">
-<persistable path="/testf3d/cmsis_lib/source/stm32f30x_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f30x.S" tooltip="testf3d/cmsis_boot/startup/startup_stm32f30x.S">
-<persistable path="/testf3d/cmsis_boot/startup/startup_stm32f30x.S"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x.h" tooltip="testf3d/cmsis_boot/stm32f30x.h">
-<persistable path="/testf3d/cmsis_boot/stm32f30x.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f30x_rcc.h" tooltip="f3pwm/cmsis_lib/include/stm32f30x_rcc.h">
+<persistable path="/f3pwm/cmsis_lib/include/stm32f30x_rcc.h"/>
 </file>
 </mruList>
 </workbench>
