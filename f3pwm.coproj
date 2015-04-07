@@ -30,7 +30,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00002000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="../../configuration/programdata/f3pwm/arm-gcc-link.ld" type="0"/>
+        <LocateLinkFile path="../../../../../coocox/coide/configuration/programdata/f3pwm/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -80,8 +80,8 @@
   <Files>
     <File name="cmsis_lib/include/stm32f30x_gpio.h" path="cmsis_lib/include/stm32f30x_gpio.h" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_spi.c" path="cmsis_lib/source/stm32f30x_spi.c" type="1"/>
-    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="cmsis_boot/stm32f30x.h" path="cmsis_boot/stm32f30x.h" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f30x_i2c.c" path="cmsis_lib/source/stm32f30x_i2c.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f30x.S" path="cmsis_boot/startup/startup_stm32f30x.S" type="1"/>
@@ -105,10 +105,10 @@
     <File name="cmsis_boot/system_stm32f30x.h" path="cmsis_boot/system_stm32f30x.h" type="1"/>
     <File name="cmsis_boot/system_stm32f30x_temp.c" path="cmsis_boot/system_stm32f30x_temp.c" type="1"/>
     <File name="cmsis_lib/include" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f30x_misc.h" path="cmsis_lib/include/stm32f30x_misc.h" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_usart.c" path="cmsis_lib/source/stm32f30x_usart.c" type="1"/>
-    <File name="main.c" path="main.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_misc.h" path="cmsis_lib/include/stm32f30x_misc.h" type="1"/>
     <File name="cmsis_lib/include/stm32f30x_usart.h" path="cmsis_lib/include/stm32f30x_usart.h" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_rcc.c" path="cmsis_lib/source/stm32f30x_rcc.c" type="1"/>
   </Files>
 </Project>
